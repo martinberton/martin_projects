@@ -27,15 +27,38 @@ in html
         </header>
         <nav>
             <hr width="50%" />
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="contact.php">Contact</a>
         </nav>
         
         <br /><br />
         
         <div id="content">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdo_4c939S5v8ETPsYsEJurKPpfFl4DmmHBsdFQ41ebFL8Npg/viewform?embedded=true" width="760" height="500" frameborder="0" marginheight="0" marginwidth="0">Chargement en cours...</iframe>
+            <table>
+                <tr id="table-header">
+                    <td><strong>Programming Language</strong></td>
+                    <td><strong>Years Experience</strong></td>
+                </tr>
+                <tr class="table-row">
+                    <td>Python</td>
+                    <td>1</td>
+                </tr>
+                <tr class="table-row">
+                    <td>C</td>
+                    <td>1</td>
+                </tr>
+                <tr class="table-row">
+                    <td>C++</td>
+                    <td>1</td>
+                </tr>
+            </table>
+            
+            <ul>
+                <li><span class="hobby">Soccer</span>: I like to play soccer and I am a big fan of Olympique of Marseille</li>
+                <li><span class="hobby">Music</span>: I play piano since I am 7 years old and I love electronic music </li>
+                <li><span class="hobby">Movie</span>: I have to see a movie or an episode of series every day it's like a drug</li>
+            </ul>
         </div>
         
         <!-- This is the footer -->

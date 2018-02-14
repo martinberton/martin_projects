@@ -1,0 +1,57 @@
+div.top ul.menu {
+                text-align: center;
+                list-style: none;
+                text-decoration: none;
+                padding-left: 0px;
+            }
+            
+            div.top li.menu {
+                display: inline;
+                text-decoration: none;
+                padding-left: 50px;
+            }
+            .sources{
+                text-align: center;
+            }
+            
+            html, body {
+                font: 16px Arial, sans-serif;
+                width: 100%;
+            }
+            
+            a {
+                color: black;
+             
+            }
+            .active {
+                color: #ffd700 ;
+                text-decoration: none;
+            }
+            a:hover{
+                color: #ffd700  ;
+            }
+            .background{
+                            background: #e0e0e0; /* fallback for old browsers */
+            background: -webkit-gradient(linear, 0 0, 100% 0, from(#e0e0e0), to(#6a6a6a));
+            background: -webkit-linear-gradient(to left, #e0e0e0, #6a6a6a);
+            background: -moz-linear-gradient(to left, #e0e0e0, #6a6a6a);
+            background: -o-linear-gradient(to left, #e0e0e0, #6a6a6a);
+            background: linear-gradient(to left, #e0e0e0, #6a6a6a); /* Chrome 10-25, Safari 5.1-6 */ /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    
+                        }
+            .container {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+            }
+            .clearfix:after {
+            content: ".";
+            visibility: hidden;
+            display: block;
+            height: 0;
+            clear: both;
+            }
+            .pegged {
+            float: right;
+            margin: 0px;
+            }

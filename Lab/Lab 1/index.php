@@ -1,35 +1,22 @@
 <!DOCTYPE html>
 <html>
-<!--
 
-First Website
-and comment
-in html
-(comments can span multiple lines)
-
--->
-
-<!-- This is the head -->
-<!-- All styles and javascript go inside the head -->
     <head>
         <meta charset=”utf-8” />
         <title> Martin Berton: Personal Website </title>
         <link href="css/styles.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     </head>
-<!-- closing head -->
 
-    <!-- This is the body -->
-    <!-- This is where we place the content of our website -->
     <body>
         <header>
             <h1> Martin Berton </h1>
         </header>
         <nav>
             <hr width="50%" />
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.php">Home</a>
+            <a href="about.php">About</a>
+            <a href="contact.php">Contact</a>
         </nav>
         
         <br /><br />
@@ -51,8 +38,6 @@ in html
             </div>
         </main>
         
-        <!-- This is the footer -->
-        <!-- The footer goes inside the body but not always -->
         <footer>
             <hr>
             CST336. 2018&copy; Berton<br />
@@ -62,9 +47,7 @@ in html
             <img src="/img/csumb.jpg" alt="csumb logo" />
             
         </footer>
-        <!-- closing footer -->
         
     </body>
-    <!-- closing body -->
 
 </html>
