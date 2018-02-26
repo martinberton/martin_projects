@@ -1,74 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html> 
     <head>
-        <title>Keven Siao</title>
+        <title>Guess the Numbers</title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
     </head>
+    
     <body>
-        <?php
-        for($i=1; $i<2; $i++){
-            ${"randomValue" . $i} = rand(1,10);
-        }
-        
-        $number= $_POST['number1'];
-        $guesses = 0;
-        $submitbutton= $_POST['test'];
-
-        ?>
-        
-        
-        Guess a Number Between 1 and 10: <br>
-        <form action="" method="POST">
-            Number 1: 
-            <input type="text" name="number1">
-            <br>
-            Number 2: 
-            <input type="text" name="number2">
-
-            <br><br>
-            <input type="submit" value="Test" name="test"/><br><br>
-            <input type="submit" value="Give Up" name="giveup"/>
-            <input type="submit" value="Reset" name="reset"/>
-        </form>
-        
-        Result: 
-        
-        <?php
-    while (!$won){
-	$guesses++;
-        if ($submitbutton){
-            if (($number > 0) && ($number <11)){
-                if ($number1 > $randomValue1){
-                    echo "Incorrect guess. The correct number is lower than $number1. Try again";
-                    if ($number2 > $randomValue2){
-                    echo "Incorrect guess. The correct number is lower than $number2. Try again";
-                    }
-                    else if ($number2 < $randomValue2){
-                    echo "Incorrect guess. The correct number is higher than $number2. Try again";
-                    }
-                }
-                else if ($number1 < $randomValue1){
-                    echo "Incorrect guess. The correct number is higher than $number1. Try again";
-                    if ($number2 > $randomValue2){
-                    echo "Incorrect guess. The correct number is lower than $number2. Try again";
-                    }
-                    else if ($number2 < $randomValue2){
-                    echo "Incorrect guess. The correct number is higher than $number2. Try again";
-                    }
-                }
-                else {
-                    echo "$randomValue1 and $randomValue2 are the correct guesses. You got it right.";
-                }
-            }
-                
-        }
-    }
+        <blockquote>
+        <h1> Guess the Numbers </h1>
+        <h3> Guess two numbers between 1 and 10!</h3>
+        <form>
             
-        ?>
-
-        
-
-
-
-
+            Number 1: <input name="number1" type="text">
+            <br>
+            Number 2: <input name="number2" type="text">
+            <br><br>
+            <input value="Guess Numbers" name="guessForm" type="submit">
+            <br><br>
+            <input value="Give Up" name="giveUp" type="submit">
+            <input value="Reset" name="reset" type="submit">
+            
+        </form>
+        </blockquote>
+    
     </body>
 </html>

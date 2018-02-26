@@ -11,6 +11,7 @@
                     <h1>Labs</h1><br />
                     <a href="/Lab/Lab 1">Lab 1</a><br />
                     <a href="/Lab/777">Lab 2</a><br />
+                    <a href="/Lab/Lab3">Lab 3</a><br />
                 </div>
                 
                 <div>
