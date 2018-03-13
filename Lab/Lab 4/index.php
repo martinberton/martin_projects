@@ -70,7 +70,7 @@
         
         
             <?php
-        
+            
             $db = new PDO("mysql:host=127.0.0.1;dbname=tech", 'mb33', '');
             
             if ($_GET['type']!='')
@@ -125,18 +125,14 @@
             	
             }
             
-            
         
-            
-            
-            
-            while ($donnees = $reponse->fetch())
+            foreach ($reponse as $donnees)
             {
             ?>
                 <div id="item">
                     <p>
                     <strong>Device</strong> : <?php echo $donnees['deviceName']; ?><br />
-                    type : <?php echo $donnees['deviceType']; ?> <br />
+                    Type : <?php echo $donnees['deviceType']; ?> <br />
                     Price: $<?php echo $donnees['price']; ?> <br />
                     Status: <?php echo $donnees['status']; ?> </em>
                     </p>
