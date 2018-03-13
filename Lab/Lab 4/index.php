@@ -71,23 +71,23 @@
         
             <?php
         
-            $bdd = new PDO("mysql:host=localhost;dbname=tech", 'mb33', '');
+            $db = new PDO("mysql:host=127.0.0.1;dbname=tech", 'mb33', '');
             
             if ($_GET['type']!='')
             {
                if($_GET['order']=='price'){
-                    $reponse = $bdd->query('SELECT * FROM device WHERE deviceType=\'' . $_GET['type'] . '\' ORDER BY price');
+                    $reponse = $db->query('SELECT * FROM device WHERE deviceType=\'' . $_GET['type'] . '\' ORDER BY price');
                } else {
-                    $reponse = $bdd->query('SELECT * FROM device WHERE deviceType=\'' . $_GET['type'] . '\'');
+                    $reponse = $db->query('SELECT * FROM device WHERE deviceType=\'' . $_GET['type'] . '\'');
                }
                 
             } 
             else if ($_GET['name']!='')
             {
                 if($_GET['order']=='price'){
-                    $reponse = $bdd->query('SELECT * FROM device WHERE deviceName like \'%' . $_GET['name'] . '%\' ORDER BY price');
+                    $reponse = $db->query('SELECT * FROM device WHERE deviceName like \'%' . $_GET['name'] . '%\' ORDER BY price');
                } else {
-                    $reponse = $bdd->query('SELECT * FROM device WHERE deviceName like \'%' . $_GET['name'] . '%\'ORDER BY deviceName');
+                    $reponse = $db->query('SELECT * FROM device WHERE deviceName like \'%' . $_GET['name'] . '%\'ORDER BY deviceName');
                }
             	
             } 
@@ -96,31 +96,31 @@
             else if ($_GET['case1']!='')
             {
                  if($_GET['order']=='price'){
-                    	$reponse = $bdd->query('SELECT * FROM device WHERE status=\'Available\'ORDER BY price');
+                    	$reponse = $db->query('SELECT * FROM device WHERE status=\'Available\'ORDER BY price');
                } else {
-                    	$reponse = $bdd->query('SELECT * FROM device WHERE status=\'Available\'ORDER BY deviceName');
+                    	$reponse = $db->query('SELECT * FROM device WHERE status=\'Available\'ORDER BY deviceName');
                }
             	
             } 
             else if ($_GET['case2']!='')
             {
                  if($_GET['order']=='price'){
-                    $reponse = $bdd->query('SELECT * FROM device WHERE status=\'CheckedOut\'ORDER BY price');
+                    $reponse = $db->query('SELECT * FROM device WHERE status=\'CheckedOut\'ORDER BY price');
                } else {
-                    $reponse = $bdd->query('SELECT * FROM device WHERE status=\'CheckedOut\' ORDER BY deviceName');
+                    $reponse = $db->query('SELECT * FROM device WHERE status=\'CheckedOut\' ORDER BY deviceName');
                }
             	
             } 
             else if($_GET['type']=='')
             {
                 if($_GET['order']=='price'){
-                    $reponse = $bdd->query('SELECT * FROM device ORDER BY price');
+                    $reponse = $db->query('SELECT * FROM device ORDER BY price');
                } 
                else if($_GET['order']='item_name')
                {
-                    $reponse = $bdd->query('SELECT * FROM device ORDER BY deviceName');
+                    $reponse = $db->query('SELECT * FROM device ORDER BY deviceName');
                }else {
-                $reponse = $bdd->query('SELECT * FROM device ');
+                $reponse = $db->query('SELECT * FROM device ');
                 }
             	
             }
