@@ -12,6 +12,7 @@
                     <a href="/Lab/Lab 1">Lab 1</a><br />
                     <a href="/Lab/777">Lab 2</a><br />
                     <a href="https://silverjackmv.herokuapp.com/">lab 3</a><br />
+                    <a href="/Lab/Lab 4">Lab 4</a><br />
                 </div>
                 
                 <div>
